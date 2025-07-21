@@ -40,3 +40,29 @@ window.addEventListener("scroll", function () {
     scrollBtn.style.display = "none";
   }
 });
+
+
+function consultar() {
+    const cnpj = document.getElementById("cnpj").value;
+
+    fetch('http://127.0.0.1:5000/consultar_cnpj?cnpj=' + cnpj)
+        .then(response => response.json())
+        .then(data => {
+            const resultadoDiv = document.getElementById("resultado");
+
+            if (data.erro) {
+                resultadoDiv.innerHTML = `<p style="color:red;">Erro: ${data.erro}</p>`;
+            } else {
+                resultadoDiv.innerHTML = `
+                    <p><strong>Nome:</strong> ${data.nome}</p>
+                    <p><strong>Situação:</strong> ${data.situacao}</p>
+                    <p><strong>Abertura:</strong> ${data.abertura}</p>
+                    <p><strong>Natureza Jurídica:</strong> ${data.natureza_juridica}</p>
+                `;
+            }
+        })
+        .catch(error => {
+            document.getElementById("resultado").innerHTML = `<p style="color:red;">Erro na requisição: ${error}</p>`;
+        });
+}
+
