@@ -7,7 +7,7 @@ document.getElementById("form").addEventListener("submit", function(event) {
     const email = form.email.value;
     const mensagem = form.message.value;
 
-    fetch("https://formsubmit.co/ajax/assessoriacontabilbk@gmail.com", {
+    fetch("https://formsubmit.co/ajax/emailtesteaquigmail.com", {
         method: "POST",
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
