@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BK Contabilidade - Serviços</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="app.js" defer></script>
+
+</head>
+
+<body id="topo">
+    <header>
+        <div class="container">
+            <h1>BK Contabilidade</h1>
+              <nav>
+                <ul class="menu">
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="quem_somos.html">Quem somos</a></li>
+                    <li><a href="servicos.html">Serviços</a></li>
+                    <li><a href="servicos.html#mensagem">Fale Conosco</a></li>
+                </ul>
+            </nav>
+          
+        </div>
+    </header>
+
+<section id="servicos">
+    <div class="container">
+        <h2>Nossos Serviços</h2>
+
+        <div class="servicos-grid">
+
+            <div class="servico">
+                <i class="fas fa-calculator"></i>
+                <h3>Contabilidade Geral</h3>
+                <p>Gestão completa das suas finanças e obrigações fiscais.</p>
+            </div>
+
+            <div class="servico">
+                <i class="fas fa-file-invoice"></i>
+                <h3>Declaração de Imposto de Renda</h3>
+                <p>Preparação e entrega da declaração de IR para pessoas físicas e jurídicas.</p>
+            </div>
+
+            <div class="servico">
+                <i class="fas fa-balance-scale"></i>
+                <h3>Regularização Fiscal</h3>
+                <p>Regularizar sua situação fiscal de forma rápida e segura.</p>
+            </div>
+
+            <div class="servico">
+                <i class="fas fa-briefcase"></i>
+                <h3>Serviços para MEI e Simples Nacional</h3>
+                <p>Atendimento especializado para microempreendedores e pequenas empresas.</p>
+            </div>            
+
+        </div>
+    </div>
+
+ <div class="separador"></div> 
+
+ <div id="mensagem">
+        <h1>Fale Conosco</h1>
+
+        <form id="form">
+            <input name="name" id="name" type="text" placeholder="Seu Nome" required><br>
+
+            <input name="email" id="email" type="email" placeholder="Seu E-mail" required><br>
+
+            <textarea name="message" id="message" rows="10" placeholder="Sua Mensagem" required></textarea><br>
+
+            <input type="hidden" name="_template" value="table">
+            <input type="hidden" name="_captcha" value="false">  
+            <input type="hidden" name="_subject" value="Nova mensagem do site Contabilidade BK"> 
+
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+
+        </form>
+    </div>
+
+    <a href="#topo" id="scrollTopBtn" title="Voltar ao topo">⬆</a>
+
+</body>
+<footer>
+        <div class="container">
+            <p>&copy; 2025 BK Contabilidade - Todos os direitos reservados.</p>
+        </div>
+    </footer>
+</html>
